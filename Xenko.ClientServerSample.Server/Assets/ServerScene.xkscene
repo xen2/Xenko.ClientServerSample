@@ -1,0 +1,24 @@
+!SceneAsset
+Id: 412503d3-04f6-49be-a8b4-27571fdd49f6
+SerializedVersion: {Xenko: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 1333765e-2f79-49b0-814b-ea962963db0c
+    Parts:
+        -   Entity:
+                Id: 1333765e-2f79-49b0-814b-ea962963db0c
+                Name: Navigation
+                Components:
+                    ac96f4ddde9276b1759ff8198e02b700: !TransformComponent
+                        Id: ece640a1-5436-4536-a59e-8950288f37df
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    af3440157275870a893b5946a3170568: !NavigationComponent
+                        Id: 9d103b8d-94c5-4590-b42a-0e9cd9daaa75
+                        NavigationMesh: 355e2ef3-1b55-42be-af1d-ce219d71f584:NavigationMesh
+                        GroupId: 64bf3a66-881e-438a-bed0-ed06c0361615
