@@ -16,4 +16,4 @@ ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
 RootAssets:
-    - FF02239B-3697-4EBB-9F37-FE880659E64B:XenkoDebugSpriteFont
+    - ff02239b-3697-4ebb-9f37-fe880659e64b:StrideDebugSpriteFont

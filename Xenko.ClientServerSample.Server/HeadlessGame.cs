@@ -1,23 +1,20 @@
-﻿// Copyright (c) Xenko contributors (https://xenko.com)
+// Copyright (c) Xenko contributors (https://xenko.com)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Xenko.Core;
-using Xenko.Core.IO;
-using Xenko.Core.Mathematics;
-using Xenko.Core.Serialization;
-using Xenko.Core.Serialization.Contents;
-using Xenko.Core.Storage;
-using Xenko.Engine;
-using Xenko.Engine.Design;
-using Xenko.Engine.Network;
-using Xenko.Games;
-using Xenko.Physics;
+using Stride.Core;
+using Stride.Core.IO;
+using Stride.Core.Mathematics;
+using Stride.Core.Serialization;
+using Stride.Core.Serialization.Contents;
+using Stride.Core.Storage;
+using Stride.Engine;
+using Stride.Engine.Design;
+using Stride.Engine.Network;
+using Stride.Games;
+using Stride.Physics;
 
-namespace Xenko.ClientServerSample.Server
+namespace Stride.ClientServerSample.Server
 {
     class HeadlessGame
     {
@@ -25,7 +22,7 @@ namespace Xenko.ClientServerSample.Server
 
         public ContentManager Content { get; private set; }
 
-        static void Main(string[] args)
+        static void Main()
         {
             new HeadlessGame().Run().Wait();
         }
