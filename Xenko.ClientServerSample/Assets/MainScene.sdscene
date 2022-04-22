@@ -1,6 +1,6 @@
 !SceneAsset
 Id: 50be6bd0-3731-42cd-9cfe-ddc2aa5a0090
-SerializedVersion: {Xenko: 3.1.0.1}
+SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
 ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -19,7 +19,7 @@ Hierarchy:
                 Components:
                     363dfd50bc1faf4cb198d55bc4959a6c: !TransformComponent
                         Id: dcae95b1-1eb5-46cb-8ffe-0b970ce33b2f
-                        Position: {X: 0.0, Y: 0.0, Z: -3.04115772}
+                        Position: {X: 0.0, Y: 0.0, Z: -3.0411577}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.1, Y: 0.1, Z: 0.1}
                         Children: {}
@@ -38,7 +38,7 @@ Hierarchy:
                     5cc49d193b6c68fa5be5bf2f81d499f5: !TransformComponent
                         Id: 69c6c29e-d839-4b9f-92fa-09c6eb4d6736
                         Position: {X: 2.6, Y: 0.6, Z: -1.0}
-                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             81adba5e12f56f8ee9420873c69e09ec: ref!! dcae95b1-1eb5-46cb-8ffe-0b970ce33b2f
@@ -47,16 +47,16 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         Slot: be0ec0e3-f3a9-49e2-806c-0b48cbdaf73c
-                    9100393ae6307583fccaa59fd3dfe1e9: !Xenko.ClientServerSample.BasicCameraController,Xenko.ClientServerSample
-                        Id: 013bc941-227e-402c-8a0c-0888582addb9
+                    e52e4f634f9224a68f76117724da4f84: !Stride.ClientServerSample.NetworkClient,Xenko.ClientServerSample
+                        Id: 1038df4d-7b4f-4692-b6b8-7c7ee0b3cb58
+                    3057490bf0850c070a6686ef26f0edbd: !Stride.ClientServerSample.BasicCameraController,Xenko.ClientServerSample
+                        Id: 7aa32eba-51b1-4ee6-a3c0-1faa2d254dcb
                         KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
                         TouchMovementSpeed: {X: 40.0, Y: 40.0, Z: 20.0}
                         SpeedFactor: 5.0
                         KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
                         MouseRotationSpeed: {X: 90.0, Y: 60.0}
                         TouchRotationSpeed: {X: 60.0, Y: 40.0}
-                    ffc363f2ec7c2a31d153d26559b3c6f0: !Xenko.ClientServerSample.NetworkClient,Xenko.ClientServerSample
-                        Id: e834730c-a58c-4b0c-a258-91077a641e08
         -   Entity:
                 Id: 5f82f5c5-f4bc-48de-a1a6-8ded24053e13
                 Name: Skybox
@@ -81,7 +81,7 @@ Hierarchy:
                     afab81a9d01d1ca7b0d77573f9f71379: !TransformComponent
                         Id: 20b556bb-e87d-40e6-8bf1-c8f4df604ef2
                         Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.258819044, W: -4.222196E-08}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     a9db986fbf5b69b0a06890a7266bd492: !LightComponent
@@ -96,8 +96,8 @@ Hierarchy:
                                 Size: Large
                                 DepthRange: {}
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
-                                BiasParameters: {}
                                 ComputeTransmittance: false
+                                BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
                 Id: a3ccd981-fad7-4e6a-a487-ba4ae4cf1f8b
@@ -122,6 +122,7 @@ Hierarchy:
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
                         ColliderShapes: {}
         -   Entity:
                 Id: ed3d7b00-6e93-4b5c-98a4-c7f47b83cc92
@@ -133,7 +134,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    2efac89a247a4430959bf2a450fec2a2: !Xenko.Navigation.NavigationBoundingBoxComponent,Xenko.Navigation
+                    2efac89a247a4430959bf2a450fec2a2: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
                         Id: 5f614701-5b34-4052-88a3-333a6be53994
                         Size: {X: 25.0, Y: 20.0, Z: 25.0}
         -   Entity:
@@ -159,6 +160,7 @@ Hierarchy:
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
                         ColliderShapes:
                             8444226d17deb10eb37280a4aa44af5f: !SphereColliderShapeDesc
                                 Is2D: false

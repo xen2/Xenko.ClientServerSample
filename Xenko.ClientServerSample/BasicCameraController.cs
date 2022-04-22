@@ -1,12 +1,12 @@
-﻿// Copyright (c) Xenko contributors (https://xenko.com)
+// Copyright (c) Xenko contributors (https://xenko.com)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 using System;
-using Xenko.Core;
-using Xenko.Core.Mathematics;
-using Xenko.Engine;
-using Xenko.Input;
+using Stride.Core;
+using Stride.Core.Mathematics;
+using Stride.Engine;
+using Stride.Input;
 
-namespace Xenko.ClientServerSample
+namespace Stride.ClientServerSample
 {
     /// <summary>
     /// A script that allows to move and rotate an entity through keyboard, mouse and touch input to provide basic camera navigation.

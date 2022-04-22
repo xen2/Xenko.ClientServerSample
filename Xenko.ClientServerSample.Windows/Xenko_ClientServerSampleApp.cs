@@ -1,6 +1,6 @@
-using Xenko.Engine;
+using Stride.Engine;
 
-namespace Xenko.ClientServerSample.Windows
+namespace Stride.ClientServerSample.Windows
 {
     class Xenko_ClientServerSampleApp
     {

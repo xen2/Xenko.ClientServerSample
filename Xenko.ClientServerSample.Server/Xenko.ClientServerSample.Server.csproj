@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <OutputPath>..\Bin\Server\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -13,7 +13,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Xenko.ClientServerSample\Xenko.ClientServerSample.csproj" />
-    <PackageReference Include="Xenko" Version="3.1.0.1-beta01-0359" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Core" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" IncludeAssets="build" />
+    <PackageReference Include="Stride.Engine" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Particles" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Physics" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.UI" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
   </ItemGroup>
 
 </Project>

@@ -1,17 +1,14 @@
-﻿// Copyright (c) Xenko contributors (https://xenko.com)
+// Copyright (c) Xenko contributors (https://xenko.com)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Xenko.Core.Mathematics;
-using Xenko.Input;
-using Xenko.Engine;
-using Xenko.Engine.Network;
-using Xenko.Core.Serialization;
+using Stride.Core.Mathematics;
+using Stride.Input;
+using Stride.Engine;
+using Stride.Engine.Network;
+using Stride.Core.Serialization;
 
-namespace Xenko.ClientServerSample
+namespace Stride.ClientServerSample
 {
     public class NetworkClient : AsyncScript
     {

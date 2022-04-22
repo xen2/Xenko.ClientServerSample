@@ -1,18 +1,18 @@
 !MaterialAsset
-Id: 80218beb-0be0-475a-a01b-4da81b10f7d9
-SerializedVersion: {Xenko: 2.0.0.0}
+Id: d4d7f8f4-004e-43f9-a5bc-e1cf1c05d098
+SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Attributes:
     MicroSurface: !MaterialGlossinessMapFeature
         GlossinessMap: !ComputeFloat
-            Value: 0.65
+            Value: 0.1
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeColor
-            Value: {R: 0.549019635, G: 0.549019635, B: 0.549019635, A: 1.0}
+            Value: {R: 0.141176477, G: 0.141176477, B: 0.141176477, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialMetalnessMapFeature
         MetalnessMap: !ComputeFloat
-            Value: 1.0
+            Value: 0.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
         Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
